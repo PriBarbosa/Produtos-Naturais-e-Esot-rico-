@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Produtos Naturais e Esotéricos</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo à Nossa Loja</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="produtos/produtos.html">Produtos</a></li>
+                <li><a href="#ebooks">E-books</a></li>
+                <li><a href="contatos/contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Descubra o Poder dos Produtos Naturais</h2>
+        <p>Encontre produtos esotéricos e naturais para o seu bem-estar.</p>
+        <button onclick="mostrarAlerta()">Saiba Mais</button>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div id="lista-produtos">
+            <!-- Listagem de produtos será carregada dinamicamente -->
+        </div>
+    </section>
+
+    <section id="ebooks">
+        <h2>E-books de Receitas Naturais</h2>
+        <div id="lista-ebooks">
+            <!-- Listagem de e-books será carregada dinamicamente -->
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form id="formContato">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagem-enviada" style="display:none; color:green;">Mensagem enviada com sucesso!</p>
+    </section>
+
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Loja de Produtos Naturais. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
